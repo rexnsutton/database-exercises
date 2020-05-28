@@ -54,13 +54,13 @@ WHERE (first_name = 'Irena'
 -- Find all employees whose last name starts or ends with 'E'
 SELECT *
 FROM employees
-WHERE last_name LIKE 'E%' OR last_name LIKE '%E'
+WHERE last_name LIKE 'E%' OR last_name LIKE '%E';
 
 
 -- Duplicate the previous query and update it to find all employees whose last name starts and ends with 'E'
 SELECT *
 FROM employees
-WHERE last_name LIKE 'E%' AND last_name LIKE '%E'
+WHERE last_name LIKE 'E%' AND last_name LIKE '%E';
 
 
 

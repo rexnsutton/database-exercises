@@ -66,7 +66,8 @@ WHERE last_name LIKE 'E%' AND last_name LIKE '%E';
 
 
 -- Find all employees hired in the 90s and born on Christmas
-SELECT DATEDIFF(CURDATE(), hire_date)
+SELECT *, DATEDIFF(CURDATE(), hire_date)
+AS "days working for company"
 FROM employees
 WHERE hire_date LIKE '199%'
   AND birth_date LIKE '%12-25'
